@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PokeVault</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <div class="logo">
+            <span class="logo-icon">◈</span>
+            <span>POKE<span>VAULT</span></span>
+        </div>
+
+        <nav class="navigation">
+            <a href="#" class="active">Início</a>
+            <a href="#collection">Minha Coleção</a>
+            <a href="#favorites">Favoritos</a>
+            <a href="#pokedex">Pokédex</a>
+        </nav>
+
+        <button class="profile-button">
+            <span>JP</span>
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">SEU UNIVERSO POKÉMON</p>
+
+                <h1>
+                    Sua coleção.
+                    <br>
+                    <span>Do seu jeito.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Organize seus Pokémon favoritos, acompanhe sua coleção
+                    e descubra novos companheiros.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-button" id="explore-button">
+                        Explorar Pokédex
+                    </button>
+
+                    <button class="secondary-button" id="collection-button">
+                        Minha coleção
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-decoration">
+
+                <div class="orb orb-one"></div>
+                <div class="orb orb-two"></div>
+
+                <div class="pokemon-placeholder">
+
+                    <img
+                        id="hero-pokemon"
+                        src=""
+                        alt="Pokémon em destaque"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VISÃO GERAL -->
+
+        <section class="collection-section" id="collection">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        VISÃO GERAL
+                    </p>
+
+                    <h2>
+                        Minha coleção
+                    </h2>
+
+                </div>
+
+                <button class="view-button" id="view-collection-button">
+                    Ver coleção ↓
+                </button>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <span class="stat-icon">
+                        ◈
+                    </span>
+
+                    <div>
+
+                        <strong id="collection-count">
+                            0
+                        </strong>
+
+                        <p>
+                            Pokémon coletados
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span class="stat-icon">
+                        ♡
+                    </span>
+
+                    <div>
+
+                        <strong id="favorites-count">
+                            0
+                        </strong>
+
+                        <p>
+                            Favoritos
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span class="stat-icon">
+                        ◉
+                    </span>
+
+                    <div>
+
+                        <strong id="pokedex-progress">
+                            0%
+                        </strong>
+
+                        <p>
+                            Pokédex completa
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MINHA COLEÇÃO -->
+
+        <section class="saved-section" id="my-collection">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        SEUS POKÉMON
+                    </p>
+
+                    <h2>
+                        Minha coleção
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div
+                id="collection-grid"
+                class="pokemon-grid"
+            ></div>
+
+        </section>
+
+
+        <!-- FAVORITOS -->
+
+        <section class="saved-section" id="favorites">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        SEUS PREFERIDOS
+                    </p>
+
+                    <h2>
+                        Favoritos
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div
+                id="favorites-grid"
+                class="pokemon-grid"
+            ></div>
+
+        </section>
+
+
+        <!-- POKÉDEX -->
+
+        <section
+            class="pokedex-section"
+            id="pokedex"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        EXPLORE
+                    </p>
+
+                    <h2>
+                        Pokédex
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Pesquise por nome ou número..."
+                >
+
+                <button
+                    id="search-button"
+                    class="primary-button"
+                >
+                    Buscar
+                </button>
+
+            </div>
+
+
+            <div
+                id="pokemon-grid"
+                class="pokemon-grid"
+            ></div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
